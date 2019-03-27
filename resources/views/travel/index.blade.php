@@ -158,26 +158,22 @@
   Amazing Packages
   </h1>
    <div class="row">
-    @foreach($trending as $trend)
-    @if(!empty($trend->image->image_name))
-    @if($trend->trending=='yes')
+   
      
     <div class="col-md-4 col-sm-6 col-xs-6 no-padding">
-      <div class="container11" onclick="window.location.href = '{{ url("/package/".$trend->id."/".@$trend->multicatagory->CatagoryData->category) }}';">
-        <a href = "{{ url('/package/'.$trend->id."/".@$trend->multicatagory->CatagoryData->category) }}">
-        <img src="{{ url($trend->image->image_name) }}"  alt="" class="image">
+      <div class="container11" onclick="window.location.href = ''">
+        <a href = "">
+        <img src=""  alt="" class="image">
         <div class="overlay1">
-            <h6 class="h7">{{ @$trend->packagename }}</h6>
-          <p class="pric">₹ {{ @$trend->cost }}</p>
+            <h6 class="h7"></h6>
+          <p class="pric">₹ </p>
         </div>
         </a>
         
       </div>
       
     </div>
-    @endif
-    @endif
-    @endforeach
+   
   </div>
 
   <br><br><br><br>
@@ -197,29 +193,7 @@
   <h1 class="text-center h" style="padding-bottom:2%">
   Amazing Packages
   </h1>
- <div class="row">
-    @foreach($trending as $trend)
-    
-    @if(!empty($trend->image->image_name))
-    @if($trend->trending=='yes')
-     
-    <div class="col-md-4 col-sm-6 col-xs-6 no-padding">
-     
-      <div class="container11" onclick="window.location.href = '{{ url('/package/'.$trend->id.'/'.@$trend->multicatagory->CatagoryData->category) }}';">
-        
-        <img src="{{ url($trend->image->image_name) }}" alt="" class="image">
-        <div class="overlay1">
-            <h6 class="h7">{{ @$trend->packagename }}</h6>
-          <p class="pric">₹ {{ @$trend->cost }}</p>
-        </div>
-        
-      </div>
-      
-    </div>
-    @endif
-    @endif
-    @endforeach
-  </div>
+
   
   <br><br>
   <div class="row" style="margin-top:-10%">

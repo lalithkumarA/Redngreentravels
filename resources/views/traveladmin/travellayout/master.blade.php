@@ -1,0 +1,5 @@
+@include('traveladmin.travellayout.header')
+@include('traveladmin.travellayout.sidebar')
+@include('traveladmin.travellayout.error')
+@yield('content')
+@include('traveladmin.travellayout.footer')
